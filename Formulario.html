@@ -35,6 +35,11 @@
             <input type="number" name="edad" min="18" max="35">
         </div>
         <br>
+        <div class="fecha_nac">
+            <label for="fecha_naci">Fecha de Nacimiento:</label>
+            <input type="date" name="" id="">
+        </div>
+        <br>
         <div class="gen">
             <label for="genero">Genero:</label>
             <select name="genero" id="">
@@ -50,7 +55,19 @@
             <input type="text" name="phone" minlength="9" maxlength="12" placeholder="Ingrese su numero celular">
         </div>
         <br>
-        <input type="submit" value="Enviar">
+        <div class="profesion">
+            <label for="profesion">Profesion:</label>
+            <select name="profesion" id="">
+                <option value="1">Ingenieria</option>
+                <option value="2">Psicologia</option>
+                <option value="3">Enfermeria</option>
+                <option value="4">Guia turistico</option>
+            </select>
+        </div>
+        <br>
+        <form >
+            <input type="button" onclick="alert('buenos dias')" value="Enviar">
+        </form>    
     </form>
 </body>
 </html>
