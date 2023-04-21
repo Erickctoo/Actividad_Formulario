@@ -5,39 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos.css">
-    <link rel="" href="">
+    <script type="text/javascript" src="main.js"></script>
     <title>Formulario</title>
 </head>
 <body>
     <form action="#" method="get">
         <div class="run">
             <label for="Rut">Rut:</label>
-            <input type="text" name="Rut" minlength="9" maxlength="10" placeholder="Ingrese su rut">
+            <input type="text" name="Rut" minlength="9" maxlength="10" placeholder="Ingrese su rut" required>
         </div>
         <br>
         <div class="nombre">
             <label for="name">Nombre:</label>
-            <input type="text" name="name" minlength="3" maxlength="20" placeholder="Ingrese su nombre">
+            <input type="text" name="name" minlength="3" maxlength="20" placeholder="Ingrese su nombre" required>
         </div>
         <br>
         <div class="apepaterno">
             <label for="apaterno">Apellido paterno:</label>
-            <input type="text" name="apaterno" minlength="3" maxlength="20" placeholder="Ingrese su apellido paterno">
+            <input type="text" name="apaterno" minlength="3" maxlength="20" placeholder="Ingrese su apellido paterno" required>
         </div>
         <br>
         <div class="apematerno">
             <label for="apmaterno">Apellido materno:</label>
-            <input type="text" name="apmaterno" minlength="3" maxlength="20" placeholder="Ingrese su apellido materno">
+            <input type="text" name="apmaterno" minlength="3" maxlength="20" placeholder="Ingrese su apellido materno" required>
         </div>
         <br>
         <div class="ed">
             <label for="edad">Edad:</label>
-            <input type="number" name="edad" min="18" max="35">
+            <input type="number" name="edad" min="18" max="35" required>
         </div>
         <br>
         <div class="fecha_nac">
             <label for="fecha_naci">Fecha de Nacimiento:</label>
-            <input type="date" name="" id="">
+            <input type="date" name="" id="" required>
         </div>
         <br>
         <div class="gen">
@@ -52,7 +52,7 @@
         <br>
         <div class="cel">
             <label for="phone">Celular:</label>
-            <input type="text" name="phone" minlength="9" maxlength="12" placeholder="Ingrese su numero celular">
+            <input required type="text" name="phone" minlength="9" maxlength="12" placeholder="Ingrese su numero celular" >
         </div>
         <br>
         <div class="profesion">
@@ -65,9 +65,13 @@
             </select>
         </div>
         <br>
+        <div class="motiv">
+            <textarea name="Motivacion" id="" cols="30" rows="10" placeholder="Escriba su motivacion para postular al trabajo"></textarea>
+        </div>
+            <input type="reset" value="Limpiar">
         <form >
             <input type="button" onclick="alert('buenos dias')" value="Enviar">
-        </form>    
+        </form>
     </form>
 </body>
 </html>
